@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/alcontacts"
+        android:title="ALL contacts"
+        />
+    <item
+        android:id="@+id/important"
+        android:title="IMPORTANT contacts"
+        />
+    <item
+        android:id="@+id/police"
+        android:title="POLICE contacts"
+        />
+    <item
+        android:id="@+id/other"
+        android:title="OTHER contacts"
+        />
+
+
+    <item
+        android:id="@+id/addcontact"
+        android:title="contacts"
+        android:icon="@drawable/add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/searc"
+        android:title=""
+        app:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/search"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afeeee"
+    tools:context="com.sai.sms.pinlock">
+    <ImageView
+        android:id="@+id/ima"
+        android:src="@drawable/im"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your pin"
+        android:layout_marginTop="250dp"
+        android:id="@+id/pin"
+        android:inputType="numberPassword"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/pinlogin"
+        android:layout_below="@+id/pin"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#ffff"
+        android:layout_margin="5sp"
+        android:textSize="18dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Pin"
+        android:id="@+id/pinset"
+        android:layout_below="@+id/pinlogin"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#ffff"
+        android:layout_margin="5sp"
+        android:textSize="18dp"
+        />
+
+</RelativeLayout>

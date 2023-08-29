@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#afeeee"
+    tools:context="com.sai.sms.loginpattern">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/ima"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/count"
+            android:layout_marginTop="65dp"
+            android:textSize="70dp"
+            android:text="30"
+            />
+        <com.andrognito.patternlockview.PatternLockView
+
+            android:id="@+id/patternView"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark"
+
+            app:dotCount="3"
+            app:dotNormalSize="17dp"
+            app:dotSelectedSize="25dp"
+
+            app:pathWidth="8dp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle"
+            android:id="@+id/countimage"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/butto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Pattern" />
+    </ScrollView>
+
+</LinearLayout>

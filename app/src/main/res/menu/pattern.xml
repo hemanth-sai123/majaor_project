@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/PINp"
+        android:title="Pattern Password" />
+
+    <item
+        android:id="@+id/userman"
+        android:title="User Manual" />
+    <item
+        android:id="@+id/aboutp"
+        android:title="About App" />
+</menu>

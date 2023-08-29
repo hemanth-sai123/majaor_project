@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tutorialspoint">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PREVENT_POWER_KEY" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <supports-screens android:smallScreens="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:anyDensity="true"
+        android:xlargeScreens="true"
+        />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rfi1"
+        android:label="raile"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.sai.sms.recordact"></activity>
+        <activity android:name="com.sai.sms.showeachcontact" />
+        <activity android:name="com.sai.sms.showeachcheckcontact" android:label="Each contact"/>
+        <activity android:name="com.sai.sms.seecontactsdetails" />
+        <activity android:name="com.sai.sms.showeachpolicecontact" />
+        <activity
+            android:name="com.sai.sms.checkcontacts"
+            android:label="List of contacts" />
+        <activity android:name="com.sai.sms.pinsetall"  android:label="Setting Pin"/>
+        <activity
+            android:name="com.sai.sms.all_contactclass"
+            android:label="List of all contacts" />
+        <activity android:name="com.sai.sms.showeachallcontact" />
+        <activity
+            android:name="com.sai.sms.loginpattern"
+            android:label="Pattern Login"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sai.sms.pinlock"
+            android:label="Pin login"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.sai.sms.setpattern" />
+        <activity android:name="com.sai.sms.imagesharing" />
+        <activity android:name="com.sai.sms.important_contact" />
+        <activity android:name="com.sai.sms.accessing" />
+        <activity
+            android:name="com.sai.sms.contact"
+            android:label="List of important contacts" />
+        <activity
+            android:name="com.sai.sms.deleteimportant"
+            android:label="Delete Important Contact" />
+        <activity
+            android:name="com.sai.sms.addimportant"
+            android:label="ADD Important Contact" />
+        <activity
+            android:name="com.sai.sms.MainActivity"
+            android:label="Home"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.sai.sms.delete"
+            android:label="Delete All Contact" />
+
+        <activity
+            android:name="com.sai.sms.scan"
+            android:label="Scan barcode" />
+        <activity android:name="com.sai.sms.barcode" />
+        <activity
+            android:name="com.sai.sms.voice1"
+            android:label="Voice " />
+        <activity
+            android:name="com.sai.sms.screenout"
+            android:label="SEUL">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        <service android:name="com.sai.sms.LockService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

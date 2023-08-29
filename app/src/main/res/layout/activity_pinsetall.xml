@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afeeee"
+    tools:context="com.sai.sms.pinsetall">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oldpin"
+        android:inputType="numberPassword"
+        android:hint="Enter old pin"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newpin"
+        android:inputType="numberPassword"
+        android:hint="Enter New pin"
+        android:layout_marginTop="245dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conpin"
+        android:layout_below="@+id/newpin"
+        android:inputType="numberPassword"
+        android:hint="Enter Confirm pin"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/butpin"
+        android:layout_below="@+id/conpin"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#ffff"
+        android:layout_margin="5sp"
+        android:textSize="18dp"
+        />
+
+
+</RelativeLayout>

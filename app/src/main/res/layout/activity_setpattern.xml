@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sai.sms.setpattern">
+
+    <com.andrognito.patternlockview.PatternLockView
+
+        android:id="@+id/patternVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+
+        app:dotCount="3"
+        app:dotNormalSize="18dp"
+        app:dotSelectedSize="20dp"
+
+        app:pathWidth="8dp" />
+
+</LinearLayout>

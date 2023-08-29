@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Video"
+        android:id="@+id/videorecord"
+        android:icon="@drawable/videocam"
+        app:showAsAction="always"/>
+    <item
+        android:title="Camera"
+        android:id="@+id/camera"
+        android:icon="@drawable/cam"
+        app:showAsAction="always"/>
+    <item
+        android:title="Record"
+        android:id="@+id/record"
+        android:icon="@drawable/voicesend"
+        app:showAsAction="always"/>
+    <item
+        android:title="Call"
+        android:id="@+id/calling"
+        android:icon="@drawable/callone"
+        app:showAsAction="always">
+
+    </item>
+
+    <item
+        android:title="ALL CONTACT"
+        android:icon="@drawable/icon"
+        app:showAsAction="always">
+    <menu>
+       <!-- <item
+            android:title="ALL CONTACT" >
+
+            <menu>
+                <item android:id="@+id/aadd"
+                    android:title="ADD" />
+                <item android:id="@+id/adel"
+                    android:title="DELETE" />
+            </menu>
+        </item> -->
+
+<!--        <item
+            android:title="ALL CONTACT"
+            android:id="@+id/allcontactlist">
+        </item>
+        -->
+
+       <!--- <item android:id="@+id/t3"
+            android:title="IMPORTANT CONTACT" >
+            <menu>
+                <item android:id="@+id/iadd"
+                    android:title="ADD" />
+                <item android:id="@+id/idel"
+                    android:title="DELETE" />
+            </menu>
+        </item> -->
+        <!--
+        <item android:id="@+id/contacts"
+            android:title="IMPORTANT CONTACTS"
+
+            >
+
+
+        </item>
+        <item android:id="@+id/seenew"
+            android:title="POLICE CONTACTS"
+
+            >
+
+
+        </item>
+        -->
+        <item android:id="@+id/check"
+            android:title="CONTACTS"
+
+            >
+
+
+        </item>
+        <item android:id="@+id/recordact"
+            android:title="Record"
+
+            >
+
+
+        </item>
+
+       <!--<item android:id="@+id/voicein"
+            android:title='Voice' >
+
+        </item> -->
+      <!--  <item android:id="@+id/voiceout"
+            android:title='Voice' >
+
+        </item>
+
+        <item android:id="@+id/imagesss"
+            android:title="Share image" >
+
+        </item>
+
+-->
+
+
+       <!-- <item android:id="@+id/barc"
+            android:title="SCAN BARCODE" >
+            <menu>
+                <item android:id="@+id/scanbar"
+                    android:title="Scan" />
+                <item android:id="@+id/Retrive"
+                    android:title="Retrive" />
+                <item android:id="@+id/deletescan"
+                    android:title="Delete" />
+            </menu>
+
+        </item> -->
+        <item android:id="@+id/SMS"
+            android:title="UPDATE SMS"
+
+            >
+            <menu>
+                <item android:id="@+id/updatesmsa"
+                    android:title="SEND SMS" />
+                <item android:id="@+id/changetime"
+                    android:title="CHANGE TIME" />
+            </menu>
+
+        </item>
+        <item android:id="@+id/power"
+            android:title="Power setting"
+
+            >
+            <menu>
+                <item android:id="@+id/powersms"
+                    android:title="Sms" />
+                <item android:id="@+id/call"
+                    android:title="Calling" >
+
+                <menu>
+                    <item android:id="@+id/callingpolice"
+                        android:title="Police" />
+                    <item android:id="@+id/callingimportant"
+                        android:title="Important" />
+                </menu>
+                </item>
+            </menu>
+
+        </item>
+
+     </menu>
+    </item>
+
+
+
+
+
+</menu>

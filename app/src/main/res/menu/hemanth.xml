@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/PIN"
+        android:title="Pin Password" />
+    <item
+        android:id="@+id/setpattern"
+        android:title="Set Pattern" />
+
+    <item
+        android:id="@+id/usermanual"
+        android:title="User manual" />
+<item
+    android:id="@+id/about"
+    android:title="About App" />
+</menu>

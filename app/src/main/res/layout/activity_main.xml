@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#afeeee"
+    tools:context="com.sai.sms.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/rfi2"
+        android:scaleType="fitXY"
+
+        android:maxHeight="40dp"
+        android:maxWidth="34dp"
+
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter Phone Number"
+        android:layout_marginTop="30dp"
+        android:inputType='phone'
+        android:layout_below="@+id/imageButton"
+
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:hint="Enter SMS"
+   />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Sms"
+        android:textSize="18dp"
+       android:background="#ffff"
+        android:id="@+id/btnSendSMS"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+         />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/grid"
+                android:layout_below="@+id/btnSendSMS"
+
+                android:rowCount="2"
+                android:columnCount="2"
+                >
+                <Button
+
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="#ffff"
+                    android:layout_margin="5sp"
+                    android:textSize="18dp"
+                    android:text="Voice"
+                    android:id="@+id/voice"
+
+
+
+
+                    />
+
+                <Button
+
+                    android:text="I AM SAFE"
+                    android:textSize="18dp"
+                    android:id="@+id/safe"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="#ffff"
+                    android:layout_margin="5sp"
+
+
+                    />
+                <Button
+
+                    android:text="PANIC MODE"
+                    android:id="@+id/panic"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="#ffff"
+                    android:layout_margin="5sp"
+                    android:textSize="18dp"
+                    />
+                <Button
+                    android:layout_height="wrap_content"
+
+                    android:layout_width="wrap_content"
+                    android:id="@+id/getLocation"
+                    android:textSize="18dp"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="#ffff"
+                    android:layout_margin="5sp"
+                    android:text="HELP!"/>
+            </GridLayout>
+
+            <ImageButton
+                android:id="@+id/whatsappm"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/grid"
+                android:layout_marginLeft="300dp"
+                android:src="@drawable/whatsapp"
+                android:scaleType="fitXY"
+
+                android:maxHeight="40dp"
+                android:maxWidth="100dp"
+
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:scaleType="fitXY"
+                android:layout_below="@+id/grid"
+                android:id="@+id/call1820"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/image182"
+                app:maxImageSize = "50dp"
+                app:fabCustomSize = "100dp"
+                app:backgroundTint="@android:color/transparent"
+                app:borderWidth="0dp"
+               />
+
+            <!--
+                      <Button
+                          android:id="@+id/btnScanBarcode"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/voice"
+                          android:layout_centerHorizontal="true"
+
+                          android:text="Scan Barcode" />
+
+                  -->
+
+
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/btnSendSMS"
+        />
+
+    <!--
+    <Button
+        android:id="@+id/import_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_steps"
+        android:layout_centerHorizontal="true"
+
+        android:text="Import_contact" />
+
+
+   <Button
+        android:layout_below="@+id/tv_steps"
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE STORE"
+        />
+
+    <Button
+        android:layout_alignTop="@+id/btn_start"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Continous Sms"
+        />
+        -->
+
+</RelativeLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
